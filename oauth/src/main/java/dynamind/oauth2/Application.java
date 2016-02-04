@@ -151,6 +151,7 @@ public class Application extends SpringBootServletInitializer {
                     .authorizedGrantTypes("client_credentials", "authorization_code", "refresh_token")
                     .scopes("read", "write")
                     .redirectUris("http://localhost:8080/client/")
+                    .autoApprove(true)
 
                     .and()
 
